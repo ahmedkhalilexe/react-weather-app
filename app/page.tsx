@@ -33,8 +33,8 @@ export default function Home() {
       });
   }
   return (
-    <main className=" h-screen w-screen">
-      <div className="flex flex-col p-4 mb-6 sm:flex-row w-full justify-center items-center gap-5">
+    <main className=" h-5/6 w-full dark:bg-gray-700">
+      <div className="flex flex-col p-4 mb-6 sm:flex-row w-full justify-center items-center gap-5 bg-gray-300 dark:bg-gray-500 text-gray-800 dark:text-gray-300">
         <label htmlFor="location" className="font-semibold text-lg">
           Location
         </label>
@@ -47,7 +47,7 @@ export default function Home() {
           onChange={(e) => {
             setInput(e.target.value);
           }}
-          className=" bg-transparent border-2 border-gray-900 px-3 py-2 rounded-xl placeholder:font-semibold"
+          className=" bg-transparent border-2 border-gray-900 dark:border-gray-300 px-3 py-2 rounded-xl placeholder:font-semibold"
           onKeyDown={(e) => {
             e.key == "Enter" ? getData() : null;
           }}

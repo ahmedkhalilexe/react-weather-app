@@ -50,6 +50,7 @@ export default function Home() {
           className=" bg-transparent border-2 border-gray-900 px-3 py-2 rounded-xl placeholder:font-semibold"
           onKeyDown={(e) => {
             e.keyCode == 13 ? getData() : null;
+            window.alert(e.keyCode);
           }}
         />
       </div>

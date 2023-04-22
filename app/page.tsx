@@ -50,12 +50,11 @@ export default function Home() {
           className=" bg-transparent border-2 border-gray-900 px-3 py-2 rounded-xl placeholder:font-semibold"
           onKeyDown={(e) => {
             e.keyCode == 13 ? getData() : null;
-            window.alert(e.keyCode);
           }}
         />
       </div>
       <div className=" text-center">
-        <h1 className=" text-4xl font-bold mb-4">{data.country}</h1>
+        <h1 className=" text-4xl font-bold mb-4 dark:text-w">{data.country}</h1>
         <h2 className=" text-3xl mb-4">{data.name}</h2>
         {data.temp == undefined ? null : (
           <h3 className=" text-2xl">{data.temp}&#8451;</h3>
